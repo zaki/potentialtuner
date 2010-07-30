@@ -1,0 +1,356 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ÉnÉìÉKÉäÅ[åÍ resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HUN)
+#ifdef _WIN32
+LANGUAGE LANG_HUNGARIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CHANGERES_DLG DIALOGEX 0, 0, 164, 134
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,16,112,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,111,50,14
+    EDITTEXT        IDC_RESOLUTION,16,27,131,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Enter new resolution:",IDC_STATIC,15,14,127,8
+    GROUPBOX        "Hints",IDC_STATIC,7,44,149,62
+    LTEXT           "The new resolution cannot be zero or negative. It must also be integer.\nThe actual number of samples will be the specified resolution plus one.\nNote, that decreasing the resolution may result in loss of precision, or actual data.",IDC_STATIC,16,52,132,49
+END
+
+IDD_ADDSENSOR DIALOGEX 0, 0, 192, 273
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,252,55,14
+    PUSHBUTTON      "Cancel",IDCANCEL,135,252,50,14
+    EDITTEXT        IDC_PHI,62,18,114,14,ES_AUTOHSCROLL
+    LTEXT           "Phi:",IDC_STATIC,15,20,22,8
+    EDITTEXT        IDC_THETA,62,38,114,14,ES_AUTOHSCROLL
+    LTEXT           "Theta:",IDC_STATIC,15,40,22,8
+    GROUPBOX        "Orientation",IDC_STATIC,7,7,178,51
+    GROUPBOX        "Administration",IDC_STATIC,7,65,178,54
+    EDITTEXT        IDC_LENGTH,62,83,114,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Length:",IDC_STATIC,15,85,22,8
+    EDITTEXT        IDC_DIVS,62,103,114,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Divisions:",IDC_STATIC,15,105,35,8
+    LTEXT           "All the samples will default to zero in the created\nsensor, if no ray template is given.\nNote, if the sensor already exists in the field, no\nnew sensor is created.\nAlso note, that  length is discarded in this\nversion, and it defaults to 1.0.",IDC_STATIC,21,191,151,54,SS_NOTIFY
+    PUSHBUTTON      "Reset",IDC_RESET,73,252,50,14
+    EDITTEXT        IDC_RAY_FILE,62,138,114,14,ES_AUTOHSCROLL
+    LTEXT           "Ray file:",IDC_STATIC,15,143,27,8
+    PUSHBUTTON      "Load",IDC_LOAD_RAY,30,162,50,14
+    PUSHBUTTON      "Clear",IDC_CLEAR_RAY,108,162,50,14
+    GROUPBOX        "Ray template",IDC_STATIC,7,130,178,55
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 287, 222
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "About"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,117,196,50,14
+    CONTROL         107,IDC_STATIC,"Static",SS_BITMAP,110,118,67,70
+    GROUPBOX        "",IDC_STATIC,105,111,76,80
+    GROUPBOX        "",IDC_STATIC,7,7,273,103
+    LTEXT           "Potential field tuner version 1.00\n\nKÈszÌtette Dezsı Zolt·n\nA program rÈsze a BME MIT tanszÈkÈn folytatott  kutat·si projektnek, amely autonÛm 3D mozg·st (rep¸lÈst) vizsg·l potenci·ltÈr alap˙ navig·ciÛs algoritmus segÌtsÈgÈvel.",IDC_STATIC,18,15,253,48
+    LTEXT           "Powered by:",IDC_STATIC,7,118,47,12
+    LTEXT           "A kutat·s t·rgy·t kÈpezi egy rep¸lÈsi stÌlusokat jellemzı potenci·lterekbıl alkotott kˆnyvt·r lÈtrehoz·sa. Ebben prÛb·l segÌtsÈget ny˙jtani ez a program.\n",IDC_STATIC,18,67,253,20
+END
+
+IDD_NUMERIC DIALOGEX 0, 0, 164, 70
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,15,42,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,43,50,14
+    EDITTEXT        IDC_PARAMETRE,16,27,131,12,ES_AUTOHSCROLL
+    LTEXT           "Enter new parametre:",IDC_STATIC,15,14,127,8
+END
+
+IDD_NEWFIELD DIALOGEX 0, 0, 190, 278
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,257,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,133,257,50,14
+    EDITTEXT        IDC_PHI,62,16,108,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Phi:",IDC_STATIC,19,20,22,8
+    EDITTEXT        IDC_THETA,62,36,108,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Theta:",IDC_STATIC,19,39,22,8
+    GROUPBOX        "Resolution",IDC_STATIC,7,7,176,69
+    GROUPBOX        "Ray template",IDC_STATIC,7,85,176,58
+    EDITTEXT        IDC_RADIAL,62,55,108,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Radial:",IDC_STATIC,19,57,22,8
+    EDITTEXT        IDC_RAY_FILE,62,97,108,14,ES_AUTOHSCROLL
+    LTEXT           "Ray file:",IDC_STATIC,19,100,27,8
+    LTEXT           "HINT: You can specify 0 as theta resolution, which will cause the rays to fall to the x-y plane, ie.: you get a 2D potential field. Making any other resolution  zero is undesired. You cannot specify negative numbers for resolutions.",IDC_STATIC,19,151,151,45,SS_NOTIFY
+    PUSHBUTTON      "Reset",IDC_RESET,70,257,50,14
+    PUSHBUTTON      "Load",IDC_LOAD_RAY,19,119,50,14
+    PUSHBUTTON      "Clear",IDC_CLEAR_RAY,120,119,50,14
+    LTEXT           "HINT: You can specify a sensor function file, that will be loaded to all the sensors in the newly created potential field. Leaving this field empty will cause a constant zero to be loaded to all rays",IDC_STATIC,19,202,151,45,SS_NOTIFY
+END
+
+IDD_PREFERENCES DIALOGEX 0, 0, 187, 213
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_RTLREADING
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,192,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,192,50,14
+    LTEXT           "Background color",IDC_STATIC,7,17,57,8
+    EDITTEXT        IDC_BGCOLOR,82,15,52,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Change",IDC_CHANGE_COLOR,138,15,41,14
+    LTEXT           "Font",IDC_STATIC,7,42,15,8
+    EDITTEXT        IDC_FONT_NAME,26,39,52,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Change",IDC_CHANGE_FONT,138,39,41,14
+    PUSHBUTTON      "Default",IDC_RESET,68,192,50,14
+    LTEXT           "Size",IDC_STATIC,85,42,13,8
+    EDITTEXT        IDC_FONT_SIZE,104,39,30,14,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+END
+
+IDD_SEL_RAY DIALOGEX 0, 0, 192, 89
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,68,55,14
+    PUSHBUTTON      "Cancel",IDCANCEL,134,68,50,14
+    EDITTEXT        IDC_PHI,62,18,114,14,ES_AUTOHSCROLL
+    LTEXT           "Phi:",-1,15,20,22,8
+    EDITTEXT        IDC_THETA,62,38,114,14,ES_AUTOHSCROLL
+    LTEXT           "Theta:",-1,15,40,22,8
+    GROUPBOX        "Orientation",-1,7,7,178,51
+    PUSHBUTTON      "Reset",IDC_RESET,73,68,50,14
+END
+
+IDD_ADMINISTER DIALOG  0, 0, 169, 142
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Administration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,121,50,14
+    GROUPBOX        "Administration information",IDC_STATIC,7,7,155,103
+    PUSHBUTTON      "Reset",IDC_RESET,112,121,50,14
+    LTEXT           "alpha",IDC_STATIC,17,18,35,8
+    LTEXT           "h",IDC_STATIC,17,34,35,8
+    LTEXT           "a",IDC_STATIC,17,51,35,8
+    LTEXT           "b",IDC_STATIC,17,69,35,8
+    LTEXT           "halpha",IDC_STATIC,17,88,35,8
+    EDITTEXT        IDC_ALPHA,61,18,91,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A,61,51,91,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_H,61,34,91,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_B,61,69,91,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HALPHA,61,88,91,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CHANGERES_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        VERTGUIDE, 16
+        VERTGUIDE, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_ADDSENSOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_NUMERIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_NEWFIELD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 271
+    END
+
+    IDD_PREFERENCES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+    END
+
+    IDD_SEL_RAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_ADMINISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        VERTGUIDE, 17
+        VERTGUIDE, 52
+        VERTGUIDE, 61
+        VERTGUIDE, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+        HORZGUIDE, 27
+        HORZGUIDE, 43
+        HORZGUIDE, 60
+        HORZGUIDE, 78
+        HORZGUIDE, 97
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU 
+BEGIN
+    POPUP "&Field"
+    BEGIN
+        MENUITEM "&New field",                  IDM_NEW_FIELD
+        MENUITEM "&Load field",                 ID_FILE_LOADFIELD
+        MENUITEM "&Save field",                 ID_FILE_SAVEFIELD
+        MENUITEM "Save field &as",              ID_FILE_SAVEFIELDAS
+        MENUITEM "A&dd Sensor",                 IDM_ADD_SENSOR
+        MENUITEM "Select &ray",                 IDM_SEL_RAY
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Ray"
+    BEGIN
+        MENUITEM "&Load Ray",                   IDM_LOAD_RAY
+        MENUITEM "&Save Ray",                   IDM_SAVE_RAY
+        MENUITEM "&Numeric",                    IDM_RAY_NUMERIC
+        MENUITEM "&Reset Ray",                  IDM_RESET_RAY
+        MENUITEM "&Change resolution",          IDM_CHANGE_RES
+        MENUITEM "&Delete Ray",                 IDM_DELETE_RAY
+    END
+    POPUP "F&ilters"
+    BEGIN
+        POPUP "&Phi"
+        BEGIN
+            MENUITEM "&Gauss",                      IDM_PHI_GAUSS
+            MENUITEM "&Square",                     IDM_PHI_SQUARE
+            MENUITEM "&Triangle",                   IDM_PHI_TRIANGLE
+            MENUITEM "&Numeric",                    IDM_PHI_NUMERIC
+        END
+        POPUP "&Theta"
+        BEGIN
+            MENUITEM "&Gauss",                      IDM_THETA_GAUSS
+            MENUITEM "&Square",                     IDM_THETA_SQUARE
+            MENUITEM "&Triangle",                   IDM_THETA_TRIANGLE
+            MENUITEM "&Numeric",                    IDM_THETA_NUMERIC
+        END
+        POPUP "&Radial"
+        BEGIN
+            MENUITEM "&Gauss",                      IDM_RAD_GAUSS
+            MENUITEM "&Square",                     IDM_RAD_SQUARE
+            MENUITEM "&Triangle",                   IDM_RAD_TRIANGLE
+            MENUITEM "&Numeric",                    IDM_RAD_NUMERIC
+        END
+    END
+    POPUP "&Preferences"
+    BEGIN
+        MENUITEM "&Preferences",                IDM_PREFS
+    END
+    MENUITEM "&About",                      ID_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "logo.bmp"
+#endif    // ÉnÉìÉKÉäÅ[åÍ resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
